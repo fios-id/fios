@@ -2,7 +2,7 @@ import { ethers, run } from "hardhat";
 
 async function main() {
   try {
-    console.log("Deploying Fios contract...");
+    console.log("Deploying Fios contract to Fios Network...");
 
     const fios = await ethers.deployContract("Fios");
     await fios.waitForDeployment();

@@ -25,10 +25,19 @@ const config = {
         : [],
       chainId: 91903,
     },
+    bscTestnet: {
+      url: "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
+      accounts: process.env.CONTRACT_OWNER_PRIVATE_KEY
+        ? [process.env.CONTRACT_OWNER_PRIVATE_KEY]
+        : [],
+      chainId: 97,
+      gasPrice: 10000000000, // 10 Gwei
+    },
   },
   etherscan: {
     apiKey: {
       fios: "not-required",
+      bscTestnet: process.env.BSCSCAN_API_KEY || "",
     },
     customChains: [
       {

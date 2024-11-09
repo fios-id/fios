@@ -94,14 +94,14 @@ export default function Attesters() {
           <div className="space-y-6">
             <div className="bg-blue-50 p-4 rounded-lg">
               <p className="text-blue-800">
-                Stake 0.001 ETH to become an attestor and start verifying
+                Stake 0.001 BNB to become an attestor and start verifying
                 documents
               </p>
             </div>
             <div className="space-y-4">
               <h3 className="font-medium">Requirements:</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
-                <li>Stake 0.001 ETH</li>
+                <li>Stake 0.001 BNB</li>
                 <li>Review and verify submitted documents</li>
                 <li>Provide clear feedback for rejections</li>
                 <li>Maintain professional conduct</li>
@@ -123,7 +123,7 @@ export default function Attesters() {
                   <span>Processing...</span>
                 </>
               ) : (
-                "Become Attestor (0.001 ETH)"
+                "Become Attestor (0.001 BNB)"
               )}
             </button>
           </div>

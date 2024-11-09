@@ -8,9 +8,12 @@
     "start": "next start",
     "lint": "next lint",
     "compile": "hardhat compile",
-    "deploy": "hardhat run scripts/deploy.ts --network fios --tsconfig tsconfig.hardhat.json",
+    "deploy:fios": "hardhat run scripts/deploy-fios.ts --network fios --tsconfig tsconfig.hardhat.json",
+    "deploy:bsc": "hardhat run scripts/deploy-bsc.ts --network bscTestnet --tsconfig tsconfig.hardhat.json",
     "test": "hardhat test --tsconfig tsconfig.hardhat.json",
-    "node": "hardhat node"
+    "node": "hardhat node",
+    "verify:fios": "hardhat verify --network fios",
+    "verify:bsc": "hardhat verify --network bscTestnet"
   },
   "dependencies": {
     "@lighthouse-web3/kavach": "^0.1.9",

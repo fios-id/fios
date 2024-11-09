@@ -445,7 +445,7 @@ export const FIOS_ABI = [
 
 // Contract address will be updated after deployment
 export const FIOS_CONTRACT_ADDRESS =
-  "0xF4734Fcfa20c74221Ba473004499774643E507eE" as const;
+  "0xDC893A7cF7c2d69fAf65EDe795D5750c48d3169A" as const;
 
 // Type for the contract
 export type FiosContract = typeof FIOS_ABI;
